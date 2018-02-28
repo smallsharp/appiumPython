@@ -1,9 +1,9 @@
 '''
 Created on 2017年9月13日
 
+测试Appium Api 用法
 @author: cm
 '''
-import unittest
 
 from appium import webdriver
 
