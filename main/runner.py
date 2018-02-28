@@ -40,7 +40,7 @@ def run_case(full_config):
 if __name__ == '__main__':
     print("测试开始")
     simple_config_list = AppiumConfig.init_config()
-    server = AppiumServer(simple_config_list) # 启动服务可以放到远程服务器
+    server = AppiumServer(simple_config_list)  # 启动服务可以放到远程服务器
     server.start()
     run_multiple(simple_config_list)
     server.stop(simple_config_list)

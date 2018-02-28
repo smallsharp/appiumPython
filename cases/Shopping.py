@@ -7,8 +7,6 @@ PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
 )
 
-
-
 class AddToCart(MyTestCase):
     """
     添加商品到购物车
