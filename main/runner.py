@@ -3,9 +3,9 @@ from multiprocessing import Pool
 from base.AppiumServer import AppiumServer
 from base.BaseTestCase import MyTestCase
 from base.AppiumConfig import AppiumConfig
-from cases.Shopping import AddToCart
 from cases.Login import Login
 from cases.Login import Logout
+from report import HTMLTestReportCN
 
 
 # 多线程运行
@@ -28,13 +28,28 @@ def run_multiple(simple_config):
 
 # 执行用例，具体的用例类
 def run_case(full_config):
-    print("config:", full_config)
+    print("full_config:", full_config)
+    # {'deviceName': 'GWY0217826005102', 'platformName': 'android', 'port': '4723', 'appPackage': 'com.tude.android', 'appActivity': '.base.SplashActivity'}
     suite = unittest.TestSuite()
     suite.addTest(MyTestCase.load_tests(Login, param=full_config))
-    # suite.addTest(MyTestCase.load_tests(Logout, param=full_config))
+    suite.addTest(MyTestCase.load_tests(Logout, param=full_config))
     # unittest.TestLoader.loadTestsFromTestCase(Login)
-    results = unittest.TextTestRunner(verbosity=2).run(suite)
-    print(results)
+    # unittest.TextTestRunner(verbosity=2).run(suite)
+
+    # 确定生成报告的路径
+    filePath = r'E:\测试报告.html'
+    fp = open(filePath, 'wb')
+    # 生成报告的Title,描述
+    runner = HTMLTestReportCN.HTMLTestRunner(
+        stream=fp,
+        title='自动化测试报告',
+        # description='详细测试用例结果',
+        tester='Lee'
+    )
+    # 运行测试用例
+    runner.run(suite)
+    # 关闭文件，否则会无法生成文件
+    fp.close()
 
 
 if __name__ == '__main__':

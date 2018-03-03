@@ -1,5 +1,7 @@
 from excel._BaseExcel import BaseExcel
 from excel._MyOperation import MyOperation
+import unittest
+
 
 
 class PageObjects:
@@ -20,16 +22,17 @@ class PageObjects:
     def parse_case(self):
         # 遍历解析Excel中的用例信息
         checkSuccess = 0
-        checkFail = 0
         for step in self.steps:
             res = self.operation.operate(step)
             if res and res.get("result") is True:
-                checkSuccess += 1
+                # checkSuccess += 1
+                pass
             else:
-                checkFail += 1
-                break
-        print("[总结：成功的断言%s,失败的断言%s]" % (checkSuccess, checkFail))
-        print("失败详情：", self.operation.getTestResult())
+                print("[失败详情]：", self.operation.getTestResult())
+                return False
+                # break
+        return True
+
 
     def countSum(result):
         data = {"sum": 0, "pass": 0, "fail": 0}
