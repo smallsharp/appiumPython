@@ -6,7 +6,7 @@ from base.mProperties import Properties as attr
 from xlsxwriter import workbook
 
 
-class BaseExcel:
+class MyExcel:
 
     # 两个参数必传
     def __init__(self, path, sheetName):
@@ -71,7 +71,7 @@ class BaseExcel:
 
 
 if __name__ == '__main__':
-    excel = BaseExcel("./my.xls", "登录")
+    excel = MyExcel("./my.xls", "登录")
     # cases = excel.get_all_steps()
     # print(cases)
     valueList = excel.row_values(3)

@@ -1,5 +1,5 @@
 import os
-from base.mTestCase import MyTestCase
+from base.mTestCase import MTestCase
 from base.mPageObject import PageObjects
 
 PATH = lambda p: os.path.abspath(
@@ -8,7 +8,7 @@ PATH = lambda p: os.path.abspath(
 
 
 # 测试用例类,继承MyTestCase
-class Login(MyTestCase):
+class Login(MTestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -40,7 +40,7 @@ class Login(MyTestCase):
         super(Login, cls).tearDownClass()
 
 
-class Logout(MyTestCase):
+class Logout(MTestCase):
 
     @classmethod
     def setUpClass(cls):

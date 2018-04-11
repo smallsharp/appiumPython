@@ -1,12 +1,12 @@
 import os
-from base.mTestCase import MyTestCase
+from base.mTestCase import MTestCase
 from base.mPageObject import PageObjects
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
 )
 
-class AddToCart(MyTestCase):
+class AddToCart(MTestCase):
     """
     添加商品到购物车
     """

@@ -19,7 +19,6 @@ def initDriver(config):
         caps["recreateChromeDriverSessions"] = "True"
         # caps["automationName"] = "uiautomator2"
     else:
-        # caps['automationName'] = devices["automationName"] # Xcode8.2以上无UIAutomation,需使用XCUITest
         caps['bundleId'] = config["bundleId"]
         caps['udid'] = config["udid"]
 
@@ -40,30 +39,31 @@ def initDriver(config):
     return driver
 
 
-class MyTestCase(unittest.TestCase):
-    fullConfig = None
+class MTestCase(unittest.TestCase):
 
-    def __init__(self, methodName='runTest', param=None):
+    config = None
+    def __init__(self, methodName='runTest', dconfig=None):
         print("MyTestCase init")
-        super(MyTestCase, self).__init__(methodName)
-        global fullConfig
-        fullConfig = param
+        super(MTestCase, self).__init__(methodName)
+        global config
+        config = dconfig
 
-    # 整个Test类的开始和结束执行
+    # 整个Test类的开始执行
+
     @classmethod
     def setUpClass(cls):
-        print("MyTestCase setUp fullConfig:", fullConfig)
-        cls.driver = initDriver(fullConfig)
-        cls.devicesName = fullConfig["deviceName"]
-        cls.logger = myLog().getLog(cls.devicesName)  # 为每个设备实例化一个日志记录器
-        print("MyTestCase setUp ok")
+        print("setUpClass")
+        cls.driver = initDriver(cls.config)
+        # cls.devicesName = fullConfig["deviceName"]
+        # cls.logger = myLog().getLog(cls.devicesName)  # 为每个设备实例化一个日志记录器
+        print("setUpClass ok")
 
     # 每个用例的开始和结束执行
     # def setUp(self):
     #     print("MyTestCase-->setUp")
     #     pass
 
-    # 整个Test类的开始和结束执行
+    # 整个Test类的结束执行
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
@@ -87,8 +87,8 @@ class MyTestCase(unittest.TestCase):
         if len(testcaseNames) > 0:
             suite = unittest.TestSuite()
             for name in testcaseNames:
-                # clz 继承MyTestCase,调用了MyTestCase的构造方法,所以先执行MyTestCase
+                # clz 继承MyTestCase,调用了MTestCase的构造方法,所以先执行MyTestCase
                 suite.addTest(clz(name, param=param))
         else:
-            print(clz, "中没有找到测试方法！")
+            print("there is no test in {}".format(clz))
         return suite

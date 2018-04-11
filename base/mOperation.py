@@ -1,23 +1,24 @@
 # -*- coding: utf-8 -*-
 from time import sleep
 from base.mAttr import Attr as attr
-from base.mExcel import BaseExcel
+from base.mExcel import MyExcel
 
 
 class MyOperation:
-
     """
     主要用于用例的执行驱动，执行用例相关操作
     具体操作,根据解析Excel中的关键字，判断执行何种操作，如查找元素，输入等
     """
-    def __init__(self, driver):
+
+    def __init__(self, driver, steps=None):
         """
         生成一个用例执行驱动实例
         :param driver: 可执行用例的实例对象
         """
         self.driver = driver
+        # self.steps = steps
 
-    def operate(self, step):
+    def exec(self, step):
         """
         用例执行入口，分发任务
         :param step: 需要执行的用例，对应sheet中一行
@@ -39,7 +40,8 @@ class MyOperation:
         elif operate_type in [attr.CLICK, attr.SEND_KEYS]:
             if not element_info:
                 # raise RuntimeError("缺少必要的参数findType:%s,elementInfo:%s" % (find_type, element_info))
-                raise RuntimeError("缺少必要的参数{find_type},{element_info}".format(find_type=find_type, element_info = element_info))
+                raise RuntimeError(
+                    "缺少必要的参数{find_type},{element_info}".format(find_type=find_type, element_info=element_info))
             if index:
                 mobile_element = self.find_elements(find_type, element_info, index)
             else:
@@ -54,9 +56,8 @@ class MyOperation:
         else:
             self.do_action(case=step, operateType=operate_type)
 
-
         #  所有操作执行完毕后，判断是否需要断言(检查类型和预期结果 均存在才执行断言)
-        if check_type and check_expect :
+        if check_type and check_expect:
             result = self.check(check_type, check_expect).get("result")
             self.summury(result, checkType=check_type, checkExpect=check_expect)  # 汇总断言数据
             if result:
@@ -91,7 +92,6 @@ class MyOperation:
             warnings.warn("{} is not found".format(element_info))
         finally:
             return element
-
 
     def find_elements(self, findType, elementInfo, index):
         """
@@ -131,7 +131,6 @@ class MyOperation:
         }
         return action[operateType]()
 
-
     def do_action_with_element(self, operate_type, mobile_element, step):
         """
         执行何种操作（需要提供元素）
@@ -155,7 +154,6 @@ class MyOperation:
         """
         print(case[attr.STEP], mobileElement)
         mobileElement.click()
-
 
     def sendKeys(self, mobileElement, case):
         """
@@ -247,7 +245,6 @@ class MyOperation:
     def getTestResult(self):
         return self.TestResult
 
-
     def checkText(self, checkExpect):
         """
         辅助断言
@@ -275,7 +272,7 @@ class MyOperation:
 
 if __name__ == '__main__':
     op = MyOperation()
-    excel = BaseExcel("my.xls", "登录")
+    excel = MyExcel("my.xls", "登录")
     cases = excel.get_all_steps()
     print(cases)
-    op.operate(cases)
+    op.execStep(cases)
