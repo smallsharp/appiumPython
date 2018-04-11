@@ -1,13 +1,4 @@
-class BaseProperties(object):
-
-    """
-        属性配置
-    """
-
-    # yaml目录关键字
-    TEST_INFO = "testinfo"
-    TEST_CASE = "testcase"
-    CHECK = "check"
+class Properties(object):
 
     # testcase中使用的关键字
     ELEMENT_INFO = "element_info"
@@ -41,6 +32,3 @@ class BaseProperties(object):
     GET_VALUE = "get_value"
     WAIT_TIME = 20
     PRESS_KEY_CODE = "press_keycode"
-    GET_CONTENT_DESC = "get_content_desc"
-    RE_CONNECT = 1 # 是否打开失败后再次运行一次用例
-    MSG = ""

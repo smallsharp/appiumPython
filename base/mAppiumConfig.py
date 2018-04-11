@@ -1,30 +1,5 @@
 import os
 
-
-class AppiumConfig(object):
-
-    # 85GBBMA2353T
-    @classmethod
-    def init_config(cls):
-        """
-        初始化设备列表的基本配置
-        :return: 如 [{'deviceName': 'LE67A06310143950', 'port': '4723', 'bport': '9515'}]
-        """
-        deviceNameList = get_con_devices()
-        if len(deviceNameList) > 0:
-            simple_config_list = []
-            port = 4723
-            for name in deviceNameList:
-                simpleConfig = {}
-                simpleConfig["deviceName"] = name
-                simpleConfig["port"] = str(port)  # 端口号
-                simpleConfig["bport"] = str(port + 4792)  # bootstrap 端口号
-                simpleConfig["ip"] = "127.0.0.1"
-                port += 2
-                simple_config_list.append(simpleConfig)
-            return simple_config_list
-
-
 def get_con_devices():
     """
     获取当前连接的设备
@@ -40,7 +15,31 @@ def get_con_devices():
     return device
 
 
+class AppiumConfig:
+
+    # 85GBBMA2353T
+    @classmethod
+    def init(cls):
+        """
+        初始化设备列表的基本配置
+        :return: 如 [{'deviceName': 'LE67A06310143950', 'port': '4723', 'bport': '9515'}]
+        """
+        deviceNameList = get_con_devices()
+        if len(deviceNameList) > 0:
+            config = []
+            port = 4723
+            for name in deviceNameList:
+                simpleConfig = {}
+                simpleConfig["deviceName"] = name
+                simpleConfig["port"] = str(port)  # 端口号
+                simpleConfig["bport"] = str(port + 4792)  # bootstrap 端口号
+                simpleConfig["ip"] = "127.0.0.1"
+                port += 2
+                config.append(simpleConfig)
+            return config
+
+
 if __name__ == '__main__':
-    AppiumConfig.init_config()
+    AppiumConfig.init()
     # ds = get_con_devices()
     # print(ds)

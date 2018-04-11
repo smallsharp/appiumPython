@@ -1,7 +1,5 @@
-from excel._BaseExcel import BaseExcel
-from excel._MyOperation import MyOperation
-import unittest
-
+from base.mExcel import BaseExcel
+from base.mOperation import MyOperation
 
 
 class PageObjects:

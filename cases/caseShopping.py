@@ -1,7 +1,6 @@
-import sys
 import os
-from base.BaseTestCase import MyTestCase
-from excel._PageObjects import PageObjects
+from base.mTestCase import MyTestCase
+from base.mPageObject import PageObjects
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)

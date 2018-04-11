@@ -13,26 +13,25 @@ PATH = lambda p: os.path.abspath(
 )
 
 
-class AppiumServer:
+class Server:
 
-    def __init__(self, kwargs=None):
-        self.kwargs = kwargs
+    def __init__(self, devList=None):
+        self.devList = devList
 
     def start(self):
         """start the appium server
         # appium -a 127.0.0.1 -p 4723 -bp 9515 -U LE67A06310143950 --session-override
         # appium -a 127.0.0.1 -p 4725 -bp 9517 -U 85GBBMA2353T --session-override
         """
-        print("kwargs:", self.kwargs)
-        for i in range(0, len(self.kwargs)):
+        for i in range(0, len(self.devList)):
             print("-" * 50)
-            ip = self.kwargs[i]["ip"]
-            port = self.kwargs[i]["port"]
-            bport = self.kwargs[i]["bport"]
-            deviceName = self.kwargs[i]["deviceName"]
-            cmd = "appium -a %s -p %s -bp %s -U %s" % (
-            ip, port, bport, deviceName + " --session-override " + ">" + deviceName + ".log")
-            # cmd = "appium --session-override -p %s -bp %s -U %s" % (self.kwargs[i]["port"], self.kwargs[i]["bport"], self.kwargs[i]["deviceName"])
+            ip = self.devList[i]["ip"]
+            port = self.devList[i]["port"]
+            bport = self.devList[i]["bport"]
+            device = self.devList[i]["deviceName"]
+            # cmd = "appium -a %s -p %s -bp %s -U %s" % (ip, port, bport, deviceName + " --session-override " + ">" + deviceName + ".log")
+            cmd = "appium -a {} -p {} -bp {} -U {} --session-override>{}.log" \
+                .format(ip, port, bport, device, device)
             print("cmd:", cmd)
             if platform.system() == "Windows":  # windows下启动server
                 thread = RunCommand(cmd)
@@ -98,7 +97,3 @@ class RunCommand(threading.Thread):
 
     def run(self):
         os.system(self.cmd)
-
-
-if __name__ == "__main__":
-    pass

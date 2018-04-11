@@ -1,38 +1,38 @@
 import unittest
 from multiprocessing import Pool
-from base.AppiumServer import AppiumServer
-from base.BaseTestCase import MyTestCase
-from base.AppiumConfig import AppiumConfig
-from cases.Login import Login
-from cases.Login import Logout
+from base.mAppiumServer import Server
+from base.mTestCase import MyTestCase
+from base.mAppiumConfig import AppiumConfig
+from cases.caseLogin import Login
+from cases.caseLogin import Logout
 from report import HTMLTestReportCN
 
 
 # 多线程运行
-def run_multiple(simple_config):
-    full_config_l = []  # 完整的configList，多线程需要的配置
-    for i in range(0, len(simple_config)):
-        full_config = {}
-        full_config["deviceName"] = simple_config[i]["deviceName"]
-        full_config["platformName"] = "android"
-        full_config["port"] = simple_config[i]["port"]
-        full_config["appPackage"] = "com.tude.android"
-        full_config["appActivity"] = ".base.SplashActivity"
+def run_multiple(configList):
+    fConfigList = []  # 完整的configList，多线程需要的配置
+    for i in range(0, len(configList)):
+        fconfig = {}
+        fconfig["deviceName"] = configList[i]["deviceName"]
+        fconfig["platformName"] = "android"
+        fconfig["port"] = configList[i]["port"]
+        fconfig["appPackage"] = "com.tude.android"
+        fconfig["appActivity"] = ".base.SplashActivity"
         # config["automationName"] = "uiautomator2"
-        full_config_l.append(full_config)
-    pool = Pool(len(full_config_l))
-    pool.map(run_case, full_config_l)
+        fConfigList.append(fconfig)
+    pool = Pool(len(fConfigList))
+    pool.map(run_case, fConfigList)
     pool.close()
     pool.join()
 
 
 # 执行用例，具体的用例类
-def run_case(full_config):
-    print("full_config:", full_config)
+def run_case(config):
+    print("full_config:", config)
     # {'deviceName': 'GWY0217826005102', 'platformName': 'android', 'port': '4723', 'appPackage': 'com.tude.android', 'appActivity': '.base.SplashActivity'}
     suite = unittest.TestSuite()
-    suite.addTest(MyTestCase.load_tests(Login, param=full_config))
-    suite.addTest(MyTestCase.load_tests(Logout, param=full_config))
+    suite.addTest(MyTestCase.load_tests(Login, param=config))
+    suite.addTest(MyTestCase.load_tests(Logout, param=config))
     # unittest.TestLoader.loadTestsFromTestCase(Login)
     # unittest.TextTestRunner(verbosity=2).run(suite)
 
@@ -54,8 +54,8 @@ def run_case(full_config):
 
 if __name__ == '__main__':
     print("测试开始")
-    simple_config_list = AppiumConfig.init_config()
-    server = AppiumServer(simple_config_list)  # 启动服务可以放到远程服务器
+    configList = AppiumConfig.init()
+    server = Server(configList)  # 启动服务可以放到远程服务器
     server.start()
-    run_multiple(simple_config_list)
-    server.stop(simple_config_list)
+    run_multiple(configList)
+    server.stop(configList)

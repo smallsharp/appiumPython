@@ -3,7 +3,7 @@ import time
 import os
 from time import sleep
 import threading
-from base.BaseAndroidPhone import getPhoneInfo
+from base.mAndroid import getPhoneInfo
 
 
 PATH = lambda p: os.path.abspath(

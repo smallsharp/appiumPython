@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from time import sleep
-from excel._Attr import Attr as attr
-from excel._BaseExcel import BaseExcel
+from base.mAttr import Attr as attr
+from base.mExcel import BaseExcel
 
 
 class MyOperation:
@@ -275,7 +275,7 @@ class MyOperation:
 
 if __name__ == '__main__':
     op = MyOperation()
-    excel = BaseExcel("11.xls", "登录")
+    excel = BaseExcel("my.xls", "登录")
     cases = excel.get_all_steps()
     print(cases)
     op.operate(cases)

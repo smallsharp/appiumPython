@@ -7,7 +7,7 @@ from xlsxwriter import workbook
 
 def read_excel():
     # 打开文件
-    workbook = xlrd.open_workbook("11.xls")
+    workbook = xlrd.open_workbook("my.xls")
 
     # 获取该文件下所有sheet
     print("文件下的sheet：", workbook.sheet_names())  # [u'sheet1', u'sheet2']
