@@ -43,20 +43,21 @@ class MTestCase(unittest.TestCase):
 
     config = None
     def __init__(self, methodName='runTest', dconfig=None):
-        print("MyTestCase init")
+        print("MTestCase init")
         super(MTestCase, self).__init__(methodName)
         global config
         config = dconfig
+        print("MTestCase ok")
 
     # 整个Test类的开始执行
 
     @classmethod
     def setUpClass(cls):
-        print("setUpClass")
-        cls.driver = initDriver(cls.config)
+        print("MTestCase setUpClass")
+        cls.driver = initDriver(config)
         # cls.devicesName = fullConfig["deviceName"]
         # cls.logger = myLog().getLog(cls.devicesName)  # 为每个设备实例化一个日志记录器
-        print("setUpClass ok")
+        print("MTestCase setUpClass ok")
 
     # 每个用例的开始和结束执行
     # def setUp(self):
@@ -66,21 +67,23 @@ class MTestCase(unittest.TestCase):
     # 整个Test类的结束执行
     @classmethod
     def tearDownClass(cls):
+        print("MTestCase tearDownClass")
         cls.driver.quit()
+        print("MTestCase tearDownClass ok")
 
     def tearDown(self):
         # self.driver.quit()
         pass
 
     @staticmethod
-    def load_tests(clz, param):
+    def load_tests(clz, config):
         """
         根据类名称，获取类中的测试方法
         :param clz: 类名称
-        :param param:
+        :param config:
         :return: 返回类中的测试方法
         """
-        print("load_tests")
+        print("MTestCase load_tests")
         testloader = unittest.TestLoader()
         # 获取clz类的所有测试方法
         testcaseNames = testloader.getTestCaseNames(clz)
@@ -88,7 +91,8 @@ class MTestCase(unittest.TestCase):
             suite = unittest.TestSuite()
             for name in testcaseNames:
                 # clz 继承MyTestCase,调用了MTestCase的构造方法,所以先执行MyTestCase
-                suite.addTest(clz(name, param=param))
+                suite.addTest(clz(name, dconfig=config))
         else:
             print("there is no test in {}".format(clz))
+        print("MTestCase load_tests ok")
         return suite

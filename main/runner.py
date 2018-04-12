@@ -31,9 +31,9 @@ def run_case(config):
     print("full_config:", config)
     # {'deviceName': 'GWY0217826005102', 'platformName': 'android', 'port': '4723', 'appPackage': 'com.tude.android', 'appActivity': '.base.SplashActivity'}
     suite = unittest.TestSuite()
-    MTestCase.loadConfig(config)
-    suite.addTest(MTestCase.load_tests(Login, param=config))
-    suite.addTest(MTestCase.load_tests(Logout, param=config))
+    # MTestCase.loadConfig(config)
+    suite.addTest(MTestCase.load_tests(Login, config=config))
+    suite.addTest(MTestCase.load_tests(Logout, config=config))
     # unittest.TestLoader.loadTestsFromTestCase(Login)
     # unittest.TextTestRunner(verbosity=2).run(suite)
 
