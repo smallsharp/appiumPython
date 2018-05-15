@@ -18,7 +18,7 @@ class PageObjects:
     def parse_case(self):
         # 遍历解析Excel中的用例信息
         for step in self.steps:
-            res = self.operation.execStep(step)
+            res = self.operation.exec(step)
             if res and res.get("result") is True:
                 pass
             else:

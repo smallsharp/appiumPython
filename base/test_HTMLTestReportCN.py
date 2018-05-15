@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 
 import unittest
-from report import HTMLTestReportCN
+from base import HTMLTestReportCN
 
 
 # 测试用例

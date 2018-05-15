@@ -1,0 +1,351 @@
+[Appium] Welcome to Appium v1.7.2
+[Appium] Non-default server args:
+[Appium]   address: 127.0.0.1
+[Appium]   bootstrapPort: 9515
+[Appium]   sessionOverride: true
+[Appium]   udid: LE67A06310143950
+[Appium] Deprecated server args:
+[Appium]   -U,--udid => --default-capabilities '{"udid":"LE67A06310143950"}'
+[Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[Appium]   udid: LE67A06310143950
+[Appium] Appium REST http interface listener started on 127.0.0.1:4723
+[HTTP] --> GET /wd/hub/status {}
+[debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.7.2","revision":null}}
+[HTTP] <-- GET /wd/hub/status 200 51 ms - 72 
+[HTTP] --> POST /wd/hub/session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"platformName":"android"}},"desiredCapabilities":{"appPackage":"com.tude.android","appActivity":".base.SplashActivity","udid":"LE67A06310143950","recreateChromeDriverSessions":"True","platformName":"android","deviceName":"LE67A06310143950","noReset":"False","noSign":"True","unicodeKeyboard":"True"}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.tude.android","appActivity":".base.SplashActivity","udid":"LE67A06310143950","recreateChromeDriverSessions":"True","platformName":"android","deviceName":"LE67A06310143950","noReset":"False","noSign":"True","unicodeKeyboard":"True"},null,{"firstMatch":[{}],"alwaysMatch":{"platformName":"android"}}]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1526376563759 (17:29:23 GMT+0800 (中国标准时间))
+[Appium] Merged W3C capabilities {"firstMatch":[{}],"alwaysMatch":{"platformName... into desiredCapabilities object {"appPackage":"com.tude.android","appActivity":...
+[Appium] Creating new AndroidDriver (v1.40.0) session
+[Appium] Capabilities:
+[Appium]   appPackage: com.tude.android
+[Appium]   appActivity: .base.SplashActivity
+[Appium]   udid: LE67A06310143950
+[Appium]   recreateChromeDriverSessions: True
+[Appium]   platformName: android
+[Appium]   deviceName: LE67A06310143950
+[Appium]   noReset: False
+[Appium]   noSign: True
+[Appium]   unicodeKeyboard: True
+[debug] [BaseDriver] 
+[debug] [BaseDriver] W3C capabilities [] and MJSONWP desired capabilities  were provided
+[BaseDriver] Expected W3C "capabilities" to be a JSON Object but was provided with: []
+[BaseDriver] Falling back to MJSONWP desired capabilities
+[BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] Capability 'unicodeKeyboard' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] Capability 'noSign' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] Session created with session id: c5149819-99b1-4d29-8036-9342d3fb7a93
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_131
+[ADB] Checking whether adb is present
+[ADB] Found the following 'build-tools' folders (newest first):
+[ADB]     D:/Android/AndroidSDK/build-tools/27.0.3/
+    D:/Android/AndroidSDK/build-tools/27.0.0/
+[ADB] Using adb.exe from D:\Android\AndroidSDK\platform-tools\adb.exe
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[AndroidDriver] Using device: LE67A06310143950
+[ADB] Checking whether adb is present
+[debug] [ADB] Setting device id to LE67A06310143950
+[AndroidDriver] App file was not listed, instead we're going to run com.tude.android directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","pm","list","packages","com.tude.android"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","echo","ping"]
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","pm","list","packages","io.appium.settings"]
+[debug] [ADB] App is installed
+[debug] [ADB] Getting package info for io.appium.settings
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","dumpsys","package","io.appium.settings"]
+[ADB] Checking whether aapt is present
+[ADB] Found the following 'build-tools' folders (newest first):
+[ADB]     D:/Android/AndroidSDK/build-tools/27.0.3/
+    D:/Android/AndroidSDK/build-tools/27.0.0/
+[ADB] Using aapt.exe from D:\Android\AndroidSDK\build-tools\27.0.3\aapt.exe
+[debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","ps"]
+[debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Current device property 'ro.build.version.sdk': 23
+[debug] [ADB] Device API level: 23
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","appops","set","io.appium.settings","android:mock_location","allow"]
+[AndroidDriver] setDeviceLanguageCountry requires language or country.
+[AndroidDriver] Got language: 'null' and country: 'null'
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Enabling Unicode keyboard support
+[debug] [AndroidDriver] Pushing unicode ime to device...
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","install","D:\\nodejs\\new_modules\\node_modules\\appium\\node_modules\\_appium-android-ime@2.0.0@appium-android-ime\\bin\\UnicodeIME-debug.apk"]
+[debug] [ADB] Install command stdout: [100%] /data/local/tmp/UnicodeIME-debug.apk
+D:\nodejs\new_modules\node_modules\appium\node_modules\_appium-android-ime@2.0.0@appium-android-ime\bin\UnicodeIME-debug.apk: 1 file pushed. 2.9 MB/s (36795 bytes in 0.012s)
+Please select on your phone whether can install the app by The ADB command?
+	pkg: /data/local/tmp/UnicodeIME-debug.apk
+Failure [INSTALL_FAILED_ALREADY_EXISTS]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","settings","get","secure","default_input_method"]
+[debug] [AndroidDriver] Unsetting previous IME io.appium.android.ime/.UnicodeIME
+[debug] [AndroidDriver] Setting IME to 'io.appium.android.ime/.UnicodeIME'
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","ime","enable","io.appium.android.ime/.UnicodeIME"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","ime","set","io.appium.android.ime/.UnicodeIME"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Getting install status for io.appium.unlock
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","pm","list","packages","io.appium.unlock"]
+[debug] [ADB] App is installed
+[debug] [ADB] Getting package info for io.appium.unlock
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","dumpsys","package","io.appium.unlock"]
+[ADB] Checking whether aapt is present
+[debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","getprop","ro.build.version.release"]
+[debug] [ADB] Current device property 'ro.build.version.release': 6.0
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","wm","size"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","getprop","ro.product.model"]
+[debug] [ADB] Current device property 'ro.product.model': Le X620
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","getprop","ro.product.manufacturer"]
+[debug] [ADB] Current device property 'ro.product.manufacturer': LeMobile
+[AndroidDriver] No app sent in, not parsing package/activity
+[debug] [AndroidDriver] No app capability. Assuming it is already on the device
+[debug] [ADB] Getting install status for com.tude.android
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","pm","list","packages","com.tude.android"]
+[debug] [ADB] App is installed
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","am","force-stop","com.tude.android"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","pm","clear","com.tude.android"]
+[debug] [AndroidDriver] Performed fast reset on the installed 'com.tude.android' application (stop and clear)
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 9515 to device: 4724
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","forward","tcp:9515","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","push","D:\\nodejs\\new_modules\\node_modules\\appium\\node_modules\\_appium-android-bootstrap@2.10.0@appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","ps"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","LE67A06310143950","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.tude.android","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [UiAutomator] Moving to state 'online'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","dumpsys","window"]
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Device API level: 23
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","am","start","-W","-n","com.tude.android/.base.SplashActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session c5149819-99b1-4d29-8036-9342d3fb7a93 added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1526376578461 (17:29:38 GMT+0800 (中国标准时间))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"com.tude.android","appActivity":".base.SplashActivity","udid":"LE67A06310143950","recreateChromeDriverSessions":"True","platformName":"android","deviceName":"LE67A06310143950","noReset":false,"noSign":true,"unicodeKeyboard":true},"appPackage":"com.tude.android","appActivity":".base.SplashActivity","udid":"LE67A06310143950","recreateChromeDriverSessions":"True","platformName":"android","deviceName":"LE67A06310143950","noReset":false,"noSign":true,"unicodeKeyboard":true,"deviceUDID":"LE67A06310143950","platformVersion":"6.0","deviceScreenSize":"1080x1920","deviceModel":"Le X620","deviceManufacturer":"LeMobile"}
+[HTTP] <-- POST /wd/hub/session 200 14703 ms - 908 
+[HTTP] --> POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/timeouts/implicit_wait {"ms":10000,"sessionId":"c5149819-99b1-4d29-8036-9342d3fb7a93"}
+[debug] [MJSONWP] Calling AppiumDriver.implicitWait() with args: [10000,"c5149819-99b1-4d29-8036-9342d3fb7a93"]
+[debug] [BaseDriver] Set implicit wait to 10000ms
+[debug] [MJSONWP] Responding to client with driver.implicitWait() result: null
+[HTTP] <-- POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/timeouts/implicit_wait 200 15 ms - 76 
+[HTTP] --> POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element {"using":"id","value":"com.android.packageinstaller:id/permission_allow_button","sessionId":"c5149819-99b1-4d29-8036-9342d3fb7a93"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.android.packageinstaller:id/permission_allow_button","c5149819-99b1-4d29-8036-9342d3fb7a93"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.android.packageinstaller:id/permission_allow_button","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.android.packageinstaller:id/permission_allow_button","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.android.packageinstaller:id/permission_allow_button' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.android.packageinstaller:id/permission_allow_button]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"1"}
+[HTTP] <-- POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element 200 313 ms - 87 
+[HTTP] --> POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element/1/click {"id":"1","sessionId":"c5149819-99b1-4d29-8036-9342d3fb7a93"}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["1","c5149819-99b1-4d29-8036-9342d3fb7a93"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element/1/click 200 728 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[HTTP] --> POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element {"using":"id","value":"com.android.packageinstaller:id/permission_allow_button","sessionId":"c5149819-99b1-4d29-8036-9342d3fb7a93"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.android.packageinstaller:id/permission_allow_button","c5149819-99b1-4d29-8036-9342d3fb7a93"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.android.packageinstaller:id/permission_allow_button","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.android.packageinstaller:id/permission_allow_button","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.android.packageinstaller:id/permission_allow_button' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.android.packageinstaller:id/permission_allow_button]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"2"}
+[HTTP] <-- POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element 200 461 ms - 87 
+[HTTP] --> POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element/2/click {"id":"2","sessionId":"c5149819-99b1-4d29-8036-9342d3fb7a93"}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["2","c5149819-99b1-4d29-8036-9342d3fb7a93"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element/2/click 200 241 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[HTTP] --> POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element {"using":"id","value":"com.android.packageinstaller:id/permission_allow_button","sessionId":"c5149819-99b1-4d29-8036-9342d3fb7a93"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.android.packageinstaller:id/permission_allow_button","c5149819-99b1-4d29-8036-9342d3fb7a93"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.android.packageinstaller:id/permission_allow_button","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.android.packageinstaller:id/permission_allow_button","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.android.packageinstaller:id/permission_allow_button' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.android.packageinstaller:id/permission_allow_button]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"3"}
+[HTTP] <-- POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element 200 425 ms - 87 
+[HTTP] --> POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element/3/click {"id":"3","sessionId":"c5149819-99b1-4d29-8036-9342d3fb7a93"}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["3","c5149819-99b1-4d29-8036-9342d3fb7a93"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"3"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"3"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element/3/click 200 175 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[HTTP] --> POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element {"using":"id","value":"com.android.packageinstaller:id/permission_allow_button","sessionId":"c5149819-99b1-4d29-8036-9342d3fb7a93"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.android.packageinstaller:id/permission_allow_button","c5149819-99b1-4d29-8036-9342d3fb7a93"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.android.packageinstaller:id/permission_allow_button","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.android.packageinstaller:id/permission_allow_button","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.android.packageinstaller:id/permission_allow_button' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.android.packageinstaller:id/permission_allow_button]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"4"}
+[HTTP] <-- POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element 200 486 ms - 87 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"4"}}
+[HTTP] --> POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element/4/click {"id":"4","sessionId":"c5149819-99b1-4d29-8036-9342d3fb7a93"}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["4","c5149819-99b1-4d29-8036-9342d3fb7a93"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"4"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"4"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element/4/click 200 1011 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[HTTP] --> POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element {"using":"id","value":"com.tude.android:id/btn_cart","sessionId":"c5149819-99b1-4d29-8036-9342d3fb7a93"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.tude.android:id/btn_cart","c5149819-99b1-4d29-8036-9342d3fb7a93"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tude.android:id/btn_cart","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tude.android:id/btn_cart","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.tude.android:id/btn_cart' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tude.android:id/btn_cart]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"5"}
+[HTTP] <-- POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element 200 1308 ms - 87 
+[HTTP] --> POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element/5/click {"id":"5","sessionId":"c5149819-99b1-4d29-8036-9342d3fb7a93"}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["5","c5149819-99b1-4d29-8036-9342d3fb7a93"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"5"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"5"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"5"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93/element/5/click 200 910 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[HTTP] --> DELETE /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93 {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["c5149819-99b1-4d29-8036-9342d3fb7a93"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1526376584622 (17:29:44 GMT+0800 (中国标准时间))
+[Appium] Removing session c5149819-99b1-4d29-8036-9342d3fb7a93 from our master session list
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","am","force-stop","com.tude.android"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","input","keyevent",3]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","ps"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'D:\Android\AndroidSDK\platform-tools\adb.exe' with args: ["-P",5037,"-s","LE67A06310143950","shell","am","force-stop","io.appium.unlock"]
+[debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1526376588264 (17:29:48 GMT+0800 (中国标准时间))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/c5149819-99b1-4d29-8036-9342d3fb7a93 200 3643 ms - 76 

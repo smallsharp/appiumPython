@@ -1,12 +1,18 @@
 import unittest
+import os
 from multiprocessing import Pool
-from base.mAppiumServer import Server
+from base.mAppiumServer import AppiumServer
 from base.mTestCase import MTestCase
 from base.mAppiumConfig import AppiumConfig
+from base import HTMLTestReportCN
 from cases.caseLogin import Login
 from cases.caseLogin import Logout
-from report import HTMLTestReportCN
 
+
+
+PATH = lambda p: os.path.abspath(
+    os.path.join(os.path.dirname(__file__), p)
+)
 
 # 多线程运行
 def run_multiple(configList):
@@ -31,14 +37,13 @@ def run_case(config):
     print("full_config:", config)
     # {'deviceName': 'GWY0217826005102', 'platformName': 'android', 'port': '4723', 'appPackage': 'com.tude.android', 'appActivity': '.base.SplashActivity'}
     suite = unittest.TestSuite()
-    # MTestCase.loadConfig(config)
     suite.addTest(MTestCase.load_tests(Login, config=config))
-    suite.addTest(MTestCase.load_tests(Logout, config=config))
+    # suite.addTest(MTestCase.load_tests(Logout, config=config))
     # unittest.TestLoader.loadTestsFromTestCase(Login)
     # unittest.TextTestRunner(verbosity=2).run(suite)
 
-    # 确定生成报告的路径
-    filePath = r'E:\测试报告.html'
+    # 生成报告的路径
+    filePath = PATH('../report/testReport.html')
     fp = open(filePath, 'wb')
     # 生成报告的Title,描述
     runner = HTMLTestReportCN.HTMLTestRunner(
@@ -56,7 +61,7 @@ def run_case(config):
 if __name__ == '__main__':
     print("测试开始")
     configList = AppiumConfig.init()
-    server = Server(configList)  # 启动服务可以放到远程服务器
+    server = AppiumServer(configList)  # 启动服务可以放到远程服务器
     server.start()
     run_multiple(configList)
     server.stop(configList)

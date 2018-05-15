@@ -1,18 +1,18 @@
 import os
 
-def get_con_devices():
+def getOnlineDevices():
     """
     获取当前连接的设备
     :return:设备列表
     """
     res = os.popen("adb devices").readlines()  # ['List of devices attached\n', 'GWY0217826005102\tdevice\n', '\n']
-    device = []
+    devices = []
     for i in res:
         if len(i) > 5 and "devices" not in i:
-            device.append(i.split()[0])
-    if not device:
+            devices.append(i.split()[0])
+    if not devices:
         raise Exception("No Devices Found!")  # 没有找到设备
-    return device
+    return devices
 
 
 class AppiumConfig:
@@ -24,7 +24,7 @@ class AppiumConfig:
         初始化设备列表的基本配置
         :return: 如 [{'deviceName': 'LE67A06310143950', 'port': '4723', 'bport': '9515'}]
         """
-        deviceNameList = get_con_devices()
+        deviceNameList = getOnlineDevices()
         if len(deviceNameList) > 0:
             config = []
             port = 4723
@@ -41,5 +41,3 @@ class AppiumConfig:
 
 if __name__ == '__main__':
     AppiumConfig.init()
-    # ds = get_con_devices()
-    # print(ds)

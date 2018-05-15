@@ -12,7 +12,7 @@ class Attr(object):
     ELEMENT_INFO = 5  # 元素ID,XPATH等信息
     ELEMENT_INDEX= 6 # 元素索引
     OPERATE_TYPE = 7  # 操作类型
-    TEST_DATA = 8  # 测试数据
+    DATA = 8  # 测试数据
     CHECK_TYPE = 9 # 断言类型
     CHECK_EXPECT = 10 # 预期的数据
 
@@ -26,13 +26,9 @@ class Attr(object):
     # 操作方式需要和Excel中操作方法下的value保持一致
     CLICK = "click"
     TAP = "tap"
-    ADB_TAP = "adb_tap"
     SWIPE = "swipe"
     SEND_KEYS = "sendkeys"
-    GET_VALUE = "get_value"
-    PRESS_KEY_CODE = "press_keycode"
-    GET_CONTENT_DESC = "get_content_desc"
-    RE_CONNECT = 1  # 是否打开失败后再次运行一次用例
+    PRESS_KEY_CODE = "presskeycode"
 
     # Excel中的断言类型
     CHECK_PAGE = "检查页面"

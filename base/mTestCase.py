@@ -53,11 +53,9 @@ class MTestCase(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        print("MTestCase setUpClass")
         cls.driver = initDriver(config)
         # cls.devicesName = fullConfig["deviceName"]
         # cls.logger = myLog().getLog(cls.devicesName)  # 为每个设备实例化一个日志记录器
-        print("MTestCase setUpClass ok")
 
     # 每个用例的开始和结束执行
     # def setUp(self):
@@ -67,9 +65,7 @@ class MTestCase(unittest.TestCase):
     # 整个Test类的结束执行
     @classmethod
     def tearDownClass(cls):
-        print("MTestCase tearDownClass")
         cls.driver.quit()
-        print("MTestCase tearDownClass ok")
 
     def tearDown(self):
         # self.driver.quit()

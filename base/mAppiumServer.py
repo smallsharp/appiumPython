@@ -13,7 +13,7 @@ PATH = lambda p: os.path.abspath(
 )
 
 
-class Server:
+class AppiumServer:
 
     def __init__(self, devList=None):
         self.devList = devList
@@ -29,9 +29,7 @@ class Server:
             port = self.devList[i]["port"]
             bport = self.devList[i]["bport"]
             device = self.devList[i]["deviceName"]
-            # cmd = "appium -a %s -p %s -bp %s -U %s" % (ip, port, bport, deviceName + " --session-override " + ">" + deviceName + ".log")
-            cmd = "appium -a {} -p {} -bp {} -U {} --session-override>{}.log" \
-                .format(ip, port, bport, device, device)
+            cmd = "appium -a {} -p {} -bp {} -U {} --session-override>{}.log".format(ip, port, bport, device, device)
             print("cmd:", cmd)
             if platform.system() == "Windows":  # windows下启动server
                 thread = RunCommand(cmd)
@@ -85,7 +83,7 @@ class Server:
                 # print plists[0]
                 os.popen("kill -9 {0}".format(plists[0]))
 
-    def re_start_server(self):
+    def restart(self):
         pass
 
 

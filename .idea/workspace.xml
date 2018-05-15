@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a14842c2-b73e-4e7e-9a0e-858c66d70191" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/base/mTestCase.py" afterPath="$PROJECT_DIR$/base/mTestCase.py" />
-      <change beforePath="$PROJECT_DIR$/main/runner.py" afterPath="$PROJECT_DIR$/main/runner.py" />
+      <change afterPath="$PROJECT_DIR$/base/mAppiumAPI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refer/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/mAppiumConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mAppiumConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/mAppiumServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mAppiumServer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/mAttr.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mAttr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/mOperation.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mOperation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/mPageObject.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mPageObject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/mTestCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mTestCase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/cases.xls" beforeDir="false" afterPath="$PROJECT_DIR$/excel/cases.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refer/simple_demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/HTMLTestReportCN.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/HTMLTestReportCN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/HTMLTestReportEN.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/HTMLTestReportEN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/test_HTMLTestReportCN.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/test_HTMLTestReportCN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/test_HTMLTestReportEN.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/test_HTMLTestReportEN.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,68 +64,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="caseLogin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cases/caseLogin.py">
+      <file leaf-file-name="demo.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/refer/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="1116">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mPageObject.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/mPageObject.py">
+      <file leaf-file-name="webdriver.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Anaconda3.5/Lib/site-packages/appium/webdriver/webdriver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="569">
+              <caret line="238" column="54" lean-forward="true" selection-start-line="238" selection-end-line="239" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mOperation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/mOperation.py">
+      <file leaf-file-name="mAppiumAPI.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/mAppiumAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="runner.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/runner.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mTestCase.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/base/mTestCase.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-              <folding>
-                <element signature="e#24#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unittest使用方法.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/refer/unittest使用方法.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="360">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -141,6 +115,8 @@
       <find>&quot;element_info&quot;</find>
       <find>mOperate</find>
       <find>[AssertError]</find>
+      <find>execStep</find>
+      <find>click home button</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -152,10 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/com/likai/appium/PageObjects.py" />
-        <option value="$PROJECT_DIR$/test/HtmlDemo.py" />
-        <option value="$PROJECT_DIR$/com/likai/appium/AppiumConfig.py" />
-        <option value="$PROJECT_DIR$/com/likai/appium/runner.py" />
         <option value="$PROJECT_DIR$/com/likai/appium/AppiumServer.py" />
         <option value="$PROJECT_DIR$/appium/AppiumConfig.py" />
         <option value="$PROJECT_DIR$/runner/runner.py" />
@@ -192,17 +164,21 @@
         <option value="$PROJECT_DIR$/excel/ExcelDemo.py" />
         <option value="$PROJECT_DIR$/excel/_BaseExcel.py" />
         <option value="$PROJECT_DIR$/base/AppiumConfig.py" />
-        <option value="$PROJECT_DIR$/base/mAppiumConfig.py" />
         <option value="$PROJECT_DIR$/base/AppiumServer.py" />
         <option value="$PROJECT_DIR$/base/BaseAndroidPhone.py" />
         <option value="$PROJECT_DIR$/base/BaseProperties.py" />
         <option value="$PROJECT_DIR$/base/mProperties.py" />
-        <option value="$PROJECT_DIR$/base/mAppiumServer.py" />
         <option value="$PROJECT_DIR$/cases/Login.py" />
-        <option value="$PROJECT_DIR$/base/mOperation.py" />
         <option value="$PROJECT_DIR$/base/mPageObject.py" />
-        <option value="$PROJECT_DIR$/main/runner.py" />
+        <option value="$PROJECT_DIR$/base/mAppiumServer.py" />
+        <option value="$PROJECT_DIR$/base/mAppiumConfig.py" />
         <option value="$PROJECT_DIR$/base/mTestCase.py" />
+        <option value="$PROJECT_DIR$/main/runner.py" />
+        <option value="$PROJECT_DIR$/base/mAttr.py" />
+        <option value="$PROJECT_DIR$/base/mOperation.py" />
+        <option value="$PROJECT_DIR$/refer/simple_demo.py" />
+        <option value="$PROJECT_DIR$/base/mAppiumAPI.py" />
+        <option value="$PROJECT_DIR$/refer/demo.py" />
       </list>
     </option>
   </component>
@@ -213,25 +189,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1366" />
-    <option name="height" value="738" />
+    <option name="x" value="-224" />
+    <option name="y" value="-1088" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,49 +209,39 @@
             <path>
               <item name="mAppium" type="b2602c69:ProjectViewProjectNode" />
               <item name="mAppium" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mAppium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mAppium" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mAppium" type="b2602c69:ProjectViewProjectNode" />
               <item name="mAppium" type="462c0819:PsiDirectoryNode" />
               <item name="refer" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mAppium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mAppium" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mInterface" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\workspace\mAppium\base" />
-      <recent name="D:\workspace\mAppium\excel" />
-      <recent name="D:\workspace\PythonStation\Appium_Python\cases" />
-      <recent name="D:\workspace\PythonStation\Appium_Python\temp" />
-      <recent name="D:\workspace\PythonStation\Appium_Python\base" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\workspace\PythonStation\Appium_Python\cases" />
       <recent name="D:\workspace\PythonStation\Appium_Python\temp" />
       <recent name="D:\workspace\PythonStation\Appium_Python\base" />
       <recent name="D:\workspace\PythonStation\Appium_Python\excel" />
       <recent name="D:\workspace\PythonStation\Appium_Python\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\python\mAppium\base" />
+      <recent name="D:\workspace\python\mAppium\cases" />
+      <recent name="D:\workspace\mAppium\base" />
+      <recent name="D:\workspace\mAppium\excel" />
+      <recent name="D:\workspace\PythonStation\Appium_Python\cases" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -299,63 +256,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.runner">
-    <configuration name="AppiumConfig" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.demo">
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Appium_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/refer" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Appium_Python" />
-      <option name="SCRIPT_NAME" value="D:\workspace\mAppium\base\mAppiumConfig.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Argparse使用" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/temp" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Appium_Python" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temp/Argparse使用.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="ExcelDemo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/excel" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Appium_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/excel/ExcelDemo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/refer/demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="runner" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Appium_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -366,7 +287,6 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Appium_Python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/runner.py" />
       <option name="PARAMETERS" value="" />
@@ -374,35 +294,66 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="py.test in unittest使用方法.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="simple_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Appium_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/refer" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\workspace\python\mAppium\refer\demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="py.test in mTestCase.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Appium_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/base/mTestCase.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="py.test in unittest使用方法.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Appium_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/refer" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/refer/unittest使用方法.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.runner" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Argparse使用" />
-      <item index="2" class="java.lang.String" itemvalue="Python.AppiumConfig" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ExcelDemo" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in unittest使用方法.py" />
+    <list>
+      <item itemvalue="Python.runner" />
+      <item itemvalue="Python tests.py.test in unittest使用方法.py" />
+      <item itemvalue="Python tests.py.test in mTestCase.py" />
+      <item itemvalue="Python.simple_demo" />
+      <item itemvalue="Python.demo" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.runner" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in unittest使用方法.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ExcelDemo" />
-        <item index="3" class="java.lang.String" itemvalue="Python.AppiumConfig" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Argparse使用" />
+      <list>
+        <item itemvalue="Python.demo" />
+        <item itemvalue="Python.simple_demo" />
+        <item itemvalue="Python.runner" />
+        <item itemvalue="Python tests.py.test in mTestCase.py" />
+        <item itemvalue="Python tests.py.test in unittest使用方法.py" />
       </list>
     </recent_temporary>
   </component>
@@ -420,9 +371,6 @@
     </executions>
     <lastSelectedExecutionName>Default</lastSelectedExecutionName>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -437,9 +385,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_HtmlDemo_py - 2017.12.21 at 14h 58m 23s.xml">
-      <configuration name="Unittests in HtmlDemo.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_HtmlDemo_py - 2017.12.21 at 15h 03m 16s.xml">
       <configuration name="Unittests in HtmlDemo.py" configurationId="tests" />
     </history-entry>
@@ -464,6 +409,9 @@
     <history-entry file="Unittests_in_UnitTest2_py - 2017.12.13 at 19h 20m 40s.xml">
       <configuration name="Unittests in UnitTest2.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_in_mTestCase_py - 2018.04.13 at 10h 22m 39s.xml">
+      <configuration name="py.test in mTestCase.py" configurationId="tests" />
+    </history-entry>
     <history-entry file="py_test_in_unittest使用方法_py - 2018.04.11 at 23h 29m 58s.xml">
       <configuration name="py.test in unittest使用方法.py" configurationId="tests" />
     </history-entry>
@@ -478,63 +426,63 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-224" y="-1088" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18601191" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42215088" sideWeight="0.1376702" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32636657" sideWeight="0.827534" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34565917" sideWeight="0.8623298" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1684435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.03215434" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.317817" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61476725" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10208333" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4969743" weight="0.32905295" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.1376702" side_tool="true" weight="0.42215088" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.6139535" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.827534" weight="0.32636657" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8623298" weight="0.3100304" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.1684435" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4969743" weight="0.03215434" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.317817" />
+      <window_info anchor="bottom" id="SFDX" order="7" sideWeight="0.4969743" weight="0.32905295" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Salesforce" order="7" sideWeight="0.4969743" weight="0.32905295" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
+      <window_info anchor="bottom" id="Log Manager" order="7" sideWeight="0.49394855" weight="0.32744783" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Execute Anonymous" order="7" sideWeight="0.4969743" weight="0.32905295" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.3296875" />
     </layout>
     <layout-to-restore>
-      <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42215088" sideWeight="0.1376702" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25037822" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38844302" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.4969743" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.827534" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38041735" sideWeight="0.8623298" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.4969743" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1709531" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49598715" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.49394855" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info anchor="bottom" id="SFDX" order="7" sideWeight="0.4969743" weight="0.32905295" />
+      <window_info anchor="bottom" id="Salesforce" order="10" sideWeight="0.4969743" weight="0.32905295" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8623298" visible="true" weight="0.38041735" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="4" />
+      <window_info id="Structure" order="1" weight="0.25037822" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4969743" weight="0.32905295" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.827534" weight="0.32744783" />
+      <window_info anchor="bottom" id="Log Manager" order="14" sideWeight="0.49394855" weight="0.32744783" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.49598715" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1709531" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38844302" />
+      <window_info anchor="bottom" id="Execute Anonymous" order="9" sideWeight="0.4969743" weight="0.32905295" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4969743" weight="0.32905295" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.1376702" side_tool="true" weight="0.42215088" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3296875" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,26 +495,11 @@
     <breakpoint-manager>
       <option name="time" value="21" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../AppiumForPython/temp/AppiumDemo.py" />
-    <entry file="file://$PROJECT_DIR$/../AppiumForPython/excel/_BaseExcel.py" />
-    <entry file="file://$PROJECT_DIR$/../AppiumForPython/excel/_PageObjects.py" />
-    <entry file="file://$PROJECT_DIR$/../AppiumForPython/base/MyTestCase.py" />
-    <entry file="file://$PROJECT_DIR$/../AppiumForPython/main/runner.py" />
-    <entry file="file://$PROJECT_DIR$/../AppiumForPython/excel/_MyOperation.py" />
-    <entry file="file://$PROJECT_DIR$/../AppiumForPython/excel/_Attr.py" />
     <entry file="file://$PROJECT_DIR$/../AppiumForPython/temp/Argparse使用.py" />
     <entry file="file://D:/apps/Anaconda/Lib/unittest/__init__.py" />
     <entry file="file://D:/apps/Anaconda/Lib/multiprocessing/pool.py" />
-    <entry file="file://$PROJECT_DIR$/base/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/PageObjects.py" />
     <entry file="file://$PROJECT_DIR$/excel/Temp.py" />
     <entry file="file://$PROJECT_DIR$/excel/ExcelTest.py" />
@@ -577,26 +510,12 @@
     <entry file="file://$PROJECT_DIR$/Temp/simple_demo.py" />
     <entry file="file://$PROJECT_DIR$/Temp/unittest使用方法.py" />
     <entry file="file://$PROJECT_DIR$/Temp/AppiumDemo.py" />
-    <entry file="file://$PROJECT_DIR$/base/mAppiumConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/BaseYaml.py" />
     <entry file="file://$PROJECT_DIR$/base/BaseStatistics.py" />
-    <entry file="file://$PROJECT_DIR$/base/mAppiumServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/mAndroid.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1069">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -604,14 +523,7 @@
     <entry file="file://$PROJECT_DIR$/base/mLog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2961">
-          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/mExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -626,96 +538,17 @@
     <entry file="file://$PROJECT_DIR$/refer/ExcelDemo.py" />
     <entry file="file://$PROJECT_DIR$/refer/Temp.py" />
     <entry file="file://$PROJECT_DIR$/refer/Pass.py" />
-    <entry file="file://$PROJECT_DIR$/base/mAttr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/refer/AppiumDemo.py" />
     <entry file="file://$PROJECT_DIR$/refer/ExcelTest.py" />
-    <entry file="file://$PROJECT_DIR$/refer/simple_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refer/Path.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refer/Argparse使用.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refer/AppiumAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="62" column="44" lean-forward="false" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/mProperties.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/387406496/builtins.py" />
     <entry file="file://$PROJECT_DIR$/refer/unittest使用方法.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="576">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/apps/Anaconda/Lib/unittest/case.py" />
-    <entry file="file://$PROJECT_DIR$/cases/caseLogin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/mOperation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/mPageObject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/b272eea9.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2422">
@@ -723,13 +556,162 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Anaconda3.5/Lib/site-packages/xlrd/sheet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="331" column="13" selection-start-line="331" selection-start-column="13" selection-end-line="331" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/mExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda3.5/Lib/multiprocessing/pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="166" selection-start-line="166" selection-end-line="166" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda3.5/Lib/multiprocessing/context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="123" column="48" lean-forward="true" selection-start-line="123" selection-start-column="48" selection-end-line="123" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/Anaconda3.5/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="340" column="6" selection-start-line="340" selection-start-column="6" selection-end-line="340" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/LE67A06310143950.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6750" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/mPageObject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/mProperties.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/mAppiumConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/mAppiumServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cases/caseLogin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="64" lean-forward="true" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/base/mTestCase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        <state relative-caret-position="438">
+          <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/mOperation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="79" column="56" lean-forward="true" selection-start-line="79" selection-start-column="56" selection-end-line="79" selection-end-column="56" />
+          <folding>
+            <element signature="e#24#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/mAttr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refer/Path.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refer/AppiumAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda3.5/Lib/site-packages/appium/webdriver/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="238" column="54" lean-forward="true" selection-start-line="238" selection-end-line="239" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/mAppiumAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refer/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1116">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
