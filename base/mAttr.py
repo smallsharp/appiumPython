@@ -1,7 +1,8 @@
-"""
-    属性配置
-"""
+
 class Attr(object):
+    """
+    常用配置信息
+    """
 
     # Excel中的关键数据，对应Excel中的列，具体使用见MyOperation
     ID = 0 # ID

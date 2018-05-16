@@ -2,10 +2,11 @@ import os
 import subprocess
 
 
-# 得到手机信息
-
-
 def getPhoneInfo(deviceName):
+    """
+    :param deviceName: 设备名称
+    :return: 手机基本信息
+    """
     cmd = "adb -s " + deviceName + " shell cat /system/build.prop "
     print('cmd:',cmd)
     # content = os.popen(cmd).readlines()
@@ -30,7 +31,6 @@ def getPhoneInfo(deviceName):
             if temp.find(device) >= 0:
                 result["device"] = temp[len(device):]
                 break
-    print("result:",result)
     return result
 
 
@@ -46,8 +46,7 @@ def get_men_total(devices):
             break
     return int(men_total)
 
-
-# 得到几核cpu
+# cpu核心数量
 def get_cpu_kel(devices):
     cmd = "adb -s " + devices + " shell cat /proc/cpuinfo"
     get_cmd = os.popen(cmd).readlines()
@@ -59,11 +58,7 @@ def get_cpu_kel(devices):
     return str(int_cpu) + "核"
 
 
-# 得到手机分辨率
+# 手机分辨率
 def get_app_pix(devices):
     result = os.popen("adb -s " + devices + " shell wm size", "r")
     return result.readline().split("Physical size:")[1]
-
-
-if __name__ == "__main__":
-    getPhoneInfo("DU2TAN15AJ049163")

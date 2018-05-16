@@ -23,3 +23,5 @@ if __name__ == '__main__':
 
     # 注意对比和上个的区别
     print(PATH("../log"))
+
+    print(1 == '2')

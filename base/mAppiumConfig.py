@@ -17,26 +17,24 @@ def getOnlineDevices():
 
 class AppiumConfig:
 
-    # 85GBBMA2353T
     @classmethod
     def init(cls):
         """
-        初始化设备列表的基本配置
+        初始化设备列表的基本配置,启动服务时区分设备
         :return: 如 [{'deviceName': 'LE67A06310143950', 'port': '4723', 'bport': '9515'}]
         """
-        deviceNameList = getOnlineDevices()
-        if len(deviceNameList) > 0:
-            config = []
-            port = 4723
-            for name in deviceNameList:
-                simpleConfig = {}
-                simpleConfig["deviceName"] = name
-                simpleConfig["port"] = str(port)  # 端口号
-                simpleConfig["bport"] = str(port + 4792)  # bootstrap 端口号
-                simpleConfig["ip"] = "127.0.0.1"
-                port += 2
-                config.append(simpleConfig)
-            return config
+        devices = getOnlineDevices()
+        config = []
+        port = 4723
+        for name in devices:
+            simpleConfig = {}
+            simpleConfig["deviceName"] = name
+            simpleConfig["port"] = str(port)  # 端口号
+            simpleConfig["bport"] = str(port + 4792)  # bootstrap 端口号
+            simpleConfig["ip"] = "127.0.0.1"
+            port += 2
+            config.append(simpleConfig)
+        return config
 
 
 if __name__ == '__main__':

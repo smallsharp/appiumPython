@@ -36,13 +36,11 @@ class Log:
         return self.logger
 
     def buildStartLine(self, caseNo):
-        startLine = "----  " + caseNo + "   " + "   " + \
-                    "  ----"
+        startLine = "----  " + caseNo + "   " + "   " + "  ----"
         self.logger.info(startLine)
 
     def buildEndLine(self, caseNo):
-        endLine = "----  " + caseNo + "   " + "END" + "   " + \
-                  "  ----"
+        endLine = "----  " + caseNo + "   " + "END" + "   " + "  ----"
         self.logger.info(endLine)
         self.checkNo = 0
 

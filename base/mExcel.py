@@ -2,7 +2,6 @@
 import datetime
 import xlrd
 import xlwt
-from base.mProperties import Properties as attr
 from xlsxwriter import workbook
 
 
@@ -34,12 +33,16 @@ class MyExcel:
     def row_values(self, row):
         return self.sheet.row_values(row)
 
-    """
-        用途：通过行列获取单元格，主要用于判断单元格的内容类型
-        类型：ctype : 0 empty,1 string, 2 number, 3 date, 4 boolean, 5 error 
-    """
+
 
     def getCell(self, row, col):
+        """
+        用途：通过行列获取单元格，主要用于判断单元格的内容类型
+        类型：ctype : 0 empty,1 string, 2 number, 3 date, 4 boolean, 5 error
+        :param row: 行号
+        :param col: 列号
+        :return: 值
+        """
         return self.sheet.cell(row, col)
 
     # 获取所有用例信息，每一行为一个用例

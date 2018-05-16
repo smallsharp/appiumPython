@@ -81,14 +81,12 @@ class AppiumAPI:
             data = int(data)
         mobileElement.send_keys(data)
 
-
     def tap(self, case):
         """
         点击指定坐标，前面务必加上延时或者判断！
-        # self.driver.tap([(100, 200)], 500)
-        # self.driver.tap([(100, 20), (100, 60), (100, 100)], 500)
+        # self.driver.tap([(100, 200)], 500) 单指操作
+        # self.driver.tap([(100, 20), (100, 60), (100, 100)], 500) 多指操作
         :param case:
-        :return:
         """
         import time
         time.sleep(2)
@@ -99,8 +97,18 @@ class AppiumAPI:
         code = case[Attr.DATA]
         self.driver.press_keycode(keycode=int(code))
 
-    def swipe(self, case):
-        pass
+    def swipe(self, data):
+        """
+        :param data: (100,500,800,500,500)
+        :return: exec swipe action
+        """
+        if len(data)==5:
+            start_x, start_y, end_x, end_y, duration = data
+            self.driver.swipe(self, start_x, start_y, end_x, end_y, duration=duration)
+        else:
+            start_x, start_y, end_x, end_y= data
+            self.driver.swipe(self, start_x, start_y, end_x, end_y, duration=500)
+
 
     def waitActivity(self, activity):
         int
