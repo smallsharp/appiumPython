@@ -2,78 +2,57 @@
 
 from appium import webdriver
 import subprocess
+import time
 
 
-# 入门Demo
-# 85GBBMA2353T
-
+# 一个相对完整的例子
 
 class Demo:
 
     def __init__(self):
-        # 1.build desired caps
+        # self.startServer()
         self.driver = self.initDriver()
 
+    # 1.start server
+    def startServer(self):
+        appium = r'D:\nodejs\new_modules\appium.cmd'
+        cmd = appium + ' -p 4723 -bp 27235 -U LE67A06310143950 --local-timezone  --command-timeout 1200 --log-timestamp  --session-override '
+        self.server = subprocess.Popen(cmd, shell=True)
 
+    # 2.build driver
     def initDriver(self):
-        # 1.build desired caps
         desired_caps = {}
-        desired_caps['deviceName'] = 'GWY0217826005102'
+        desired_caps['deviceName'] = 'LE67A06310143950'
         desired_caps['platformName'] = 'Android'
         # desired_caps['platformVersion'] = 25
+        # desired_caps['app'] = '../taidu.apk' # refer the apk to be installed
         desired_caps['appPackage'] = 'com.tude.android'
-        desired_caps['appActivity'] = '.base.SplashActivity'  # 前面不要加上包名
-        # desired_caps['dontStopAppOnReset'] = True
-        desired_caps['noReset'] = True
-        # desired_caps['stopAppAtEnd'] = False
-        desired_caps['autoUnlock'] = False
+        desired_caps['appActivity'] = '.base.SplashActivity'  # no packageName prefix
+        desired_caps['noReset'] = 'true'
         # desired_caps['newCommandTimeout'] = 600
-
-        # 2.start server
-        appium_path = r"D:\nodejs\new_modules\appium.cmd"
-        server_cmd = appium_path + ' -p 4723 -bp 27235 -U GWY0217826005102 --local-timezone  --command-timeout 1200 --log-timestamp  --session-override '
-        self.server = subprocess.Popen(server_cmd, shell=True)
-        # import os
-        # server = os.system(server_cmd)
-
-        # 3. init driver
-        driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
-
+        driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+        driver.implicitly_wait(10)
         return driver
 
-    # 4.do something
+    # 3.do somework
     def test(self):
-        import time
-        time.sleep(5)
-
-        # driver.swipe(100, 100, 200, 200, 500)
-        # driver.press_keycode(keycode=3)
-        # driver.tap([(100, 20), (100, 60), (100, 100)], 500)
-
         self.driver.find_element_by_id('com.tude.android:id/btn_profile').click()
+        # self.driver.find_element_by_id('com.tude.android:id/et_account').send_keys('18521035133')
+        # self.driver.find_element_by_id('com.tude.android:id/et_password').send_keys('111111')
+        # self.driver.find_element_by_id('com.tude.android:id/btn_login').click()
+        # assert self.driver.current_activity=='.base.HomeActivity'
 
-        time.sleep(2)
-
-        # self.driver.tap([(100, 200)], 500)
-        self.driver.tap([(300, 300), (600, 600), (900, 900)], 500)
-        time.sleep(2)
-
-        self.driver.swipe()
-
-        # self.driver.find_element_by_id('com.tude.android:id/btn_cart').click()
-        # driver.tap([(100, 20), (100, 60), (100, 100)], 500)
-        time.sleep(2)
-
+    # 4. clear
     def teardown(self):
         self.driver.quit()
-        self.server.kill()
+        # self.server.kill()
 
 
+if __name__ == '__main__':
 
-try:
-    demo = Demo()
-    demo.test()
-    demo.teardown()
-except Exception as e:
-    print(e)
-
+    try:
+        demo = Demo()
+        demo.test()
+        demo.teardown()
+    except Exception as e:
+        print(e)

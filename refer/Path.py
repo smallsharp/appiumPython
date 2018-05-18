@@ -2,7 +2,17 @@
 import os
 
 
+
+def test():
+
+    assert 1==1
+
+
 if __name__ == '__main__':
+
+
+
+    test()
 
 
     # print (os.path.dirname(os.path.abspath("__file__")))
