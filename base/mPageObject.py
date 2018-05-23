@@ -10,15 +10,15 @@ class PageObjects:
 
     def __init__(self, driver, path, sheetName):
         excel = MyExcel(path=path, sheetName=sheetName)
-        self.steps = excel.get_all_steps()  # 所有需要执行的用例信息
+        self.steps = excel.getAllSteps()  # 所有需要执行的用例信息
         self.operation = MyOperation(driver)
         # self.operation = MyOperation(driver,self.steps)
 
 
-    def parse_case(self):
+    def execCase(self):
         # 遍历解析Excel中的用例信息
         for step in self.steps:
-            res = self.operation.exec(step)
+            res = self.operation.execStep(step)
             if res and res.get("result") is True:
                 pass
             else:

@@ -21,7 +21,7 @@ class Login(MyTestCase):
         sheetName:excel中的sheet名称
         """
         loginPage = PageObjects(driver=self.driver, path=PATH("../excel/cases.xls"), sheetName="登录")
-        result = loginPage.parse_case()  # 解析Excel中的用例
+        result = loginPage.execCase()  # 解析Excel中的用例
         self.assertTrue(result)
 
         # 放到这里，会接着执行
@@ -48,8 +48,8 @@ class Logout(MyTestCase):
 
     def testLogout(self):
         logout = PageObjects(driver=self.driver,path=PATH("../excel/cases.xls"),sheetName="退出登录")
-        logout.parse_case()
-        self.assertTrue(logout.parse_case())
+        logout.execCase()
+        self.assertTrue(logout.execCase())
 
     @classmethod
     def tearDownClass(cls):

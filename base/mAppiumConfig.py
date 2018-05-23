@@ -24,17 +24,17 @@ class AppiumConfig:
         :return: 如 [{'deviceName': 'LE67A06310143950', 'port': '4723', 'bport': '9515'}]
         """
         devices = getOnlineDevices()
-        config = []
+        capsList = []
         port = 4723
         for name in devices:
-            simpleConfig = {}
-            simpleConfig["deviceName"] = name
-            simpleConfig["port"] = str(port)  # 端口号
-            simpleConfig["bport"] = str(port + 4792)  # bootstrap 端口号
-            simpleConfig["ip"] = "127.0.0.1"
+            caps = {}
+            caps["deviceName"] = name
+            caps["port"] = str(port)  # 端口号
+            caps["bport"] = str(port + 4792)  # bootstrap 端口号
+            caps["ip"] = "127.0.0.1"
             port += 2
-            config.append(simpleConfig)
-        return config
+            capsList.append(caps)
+        return capsList
 
 
 if __name__ == '__main__':

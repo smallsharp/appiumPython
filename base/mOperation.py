@@ -20,7 +20,7 @@ class MyOperation:
         self.api = AppiumAPI(self.driver)
         # self.steps = steps
 
-    def exec(self, step):
+    def execStep(self, step):
         """
         用例执行入口，分发任务
         :param step: 需要执行的用例，对应sheet中一行
@@ -174,6 +174,6 @@ class MyOperation:
 if __name__ == '__main__':
     op = MyOperation()
     excel = MyExcel("my.xls", "登录")
-    cases = excel.get_all_steps()
+    cases = excel.getAllSteps()
     print(cases)
     op.execStep(cases)

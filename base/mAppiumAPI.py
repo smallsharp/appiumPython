@@ -3,10 +3,10 @@ from base.mAttr import Attr
 
 
 class AppiumAPI:
+
     """
     appium api
     """
-
     def __init__(self, driver):
         self.driver = driver
 
@@ -105,13 +105,14 @@ class AppiumAPI:
         if len(data)==5:
             start_x, start_y, end_x, end_y, duration = data
             self.driver.swipe(self, start_x, start_y, end_x, end_y, duration=duration)
-        else:
+        elif len(data)==4:
             start_x, start_y, end_x, end_y= data
             self.driver.swipe(self, start_x, start_y, end_x, end_y, duration=500)
+        else:
+            pass
 
 
     def waitActivity(self, activity):
-        int
         i = 0
         while True:
             if self.driver.current_activity == activity:

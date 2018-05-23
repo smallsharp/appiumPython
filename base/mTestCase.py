@@ -10,30 +10,30 @@ PATH = lambda p: os.path.abspath(
 
 
 # https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/caps.md
-def initDriver(config):
+def initDriver(caps):
     print("initDriver...")
     # {'deviceName': 'LE67A06310143950', 'platformName': 'android', 'port': '4723'}
-    caps = {}
-    if str(config["platformName"]).lower() == "android":
-        caps['udid'] = config["deviceName"]
-        caps["recreateChromeDriverSessions"] = "True"
-        caps["unicodeKeyboard"] = "True"  # unicode input
-        caps["resetKeyboard"] = "True"  # reset keyboard after test
+    newCaps = {}
+    if str(caps["platformName"]).lower() == "android":
+        newCaps['udid'] = caps["deviceName"]
+        newCaps["recreateChromeDriverSessions"] = "True"
+        newCaps["unicodeKeyboard"] = "True"  # unicode input
+        newCaps["resetKeyboard"] = "True"  # reset keyboard after test
         # caps["automationName"] = "uiautomator2"
-        caps['app'] = PATH('../app/taidu.apk')
-        caps['appPackage'] = 'com.tude.android'
-        caps['appActivity'] = '.base.SplashActivity' # 最好指定,从app解析出来的会带上appPackage,可能无法启动
+        newCaps['app'] = PATH('../app/taidu.apk')
+        newCaps['appPackage'] = 'com.tude.android'
+        newCaps['appActivity'] = '.base.SplashActivity' # 最好指定,从app解析出来的会带上appPackage,可能无法启动
     else:
-        caps['bundleId'] = config["bundleId"]
-        caps['udid'] = config["udid"]
+        newCaps['bundleId'] = caps["bundleId"]
+        newCaps['udid'] = caps["udid"]
         # caps["automationName"] = 'XCUITest'
 
-    caps['platformName'] = config["platformName"]
-    caps['deviceName'] = config["deviceName"]
-    caps["noReset"] = "False"  # clear cache every time
-    caps['noSign'] = "True"
-    remote = "http://127.0.0.1:{}/wd/hub".format(config["port"])
-    driver = webdriver.Remote(remote, caps)  # 初始化时，确保手机和pc连接正常 且 为解锁状态
+    newCaps['platformName'] = caps["platformName"]
+    newCaps['deviceName'] = caps["deviceName"]
+    newCaps["noReset"] = "False"  # clear cache every time
+    newCaps['noSign'] = "True"
+    remote = "http://127.0.0.1:{}/wd/hub".format(caps["port"])
+    driver = webdriver.Remote(remote, newCaps)  # 初始化时，确保手机和pc连接正常 且 为解锁状态
     driver.implicitly_wait(10)  # 隐式等待
     print("initDriver ok...")
     return driver
@@ -68,11 +68,11 @@ class MyTestCase(unittest.TestCase):
         pass
 
     @staticmethod
-    def load_tests(clz, config):
+    def load_tests(clz, caps):
         """
         根据类名称，获取类中的测试方法
         :param clz: 类名称
-        :param config:
+        :param caps:
         :return: 返回类中的测试方法
         """
         testloader = unittest.TestLoader()
@@ -82,7 +82,7 @@ class MyTestCase(unittest.TestCase):
             suite = unittest.TestSuite()
             for name in testcaseNames:
                 # clz 继承MyTestCase,调用了MTestCase的构造方法,所以先执行MyTestCase
-                suite.addTest(clz(name,config))
+                suite.addTest(clz(name, caps)) # 实例化
         else:
             print("No Test Found in {}".format(clz))
         return suite

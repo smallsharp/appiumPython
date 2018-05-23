@@ -7,7 +7,9 @@ from xlsxwriter import workbook
 
 class MyExcel:
 
-    # 两个参数必传
+    """
+    解析Excel数据
+    """
     def __init__(self, path, sheetName):
         self.path = path
         self.sheetName = sheetName
@@ -33,8 +35,6 @@ class MyExcel:
     def row_values(self, row):
         return self.sheet.row_values(row)
 
-
-
     def getCell(self, row, col):
         """
         用途：通过行列获取单元格，主要用于判断单元格的内容类型
@@ -46,7 +46,7 @@ class MyExcel:
         return self.sheet.cell(row, col)
 
     # 获取所有用例信息，每一行为一个用例
-    def get_all_steps(self):
+    def getAllSteps(self):
         rows = self.sheet.nrows  # 获取sheet的行数
         cases = []
         for r in range(rows):

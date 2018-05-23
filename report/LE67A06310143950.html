@@ -123,9 +123,9 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">Test Report</h1>
 <p class='attribute'><strong>测试人员 : </strong> Lee</p>
-<p class='attribute'><strong>开始时间 : </strong> 2018-05-16 16:43:16</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:01:03.426000</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 2，通过 2，通过率= 100.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2018-05-22 17:32:26</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:01:18.602000</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 2，通过 1，失败 1，通过率= 50.00%</p>
 
 <p class='description'>Test Description</p>
 </div>
@@ -133,9 +133,9 @@ function html_escape(s) {
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 2 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 50.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 1 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 1 }</a>
 <a class="btn btn-info" href='javascript:showCase(3)'>所有{ 2 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
@@ -199,34 +199,62 @@ Found Element： com.tude.android:id/btn_cart
     </td>
 </tr>
 
-<tr class='passClass warning'>
+<tr class='failClass warning'>
     <td>cases.shopping.OpenCart</td>
     <td class="text-center">1</td>
-    <td class="text-center">1</td>
     <td class="text-center">0</td>
+    <td class="text-center">1</td>
     <td class="text-center">0</td>
     <td class="text-center"><a href="javascript:showClassDetail('c2',1)" class="detail" id='c2'>详细</a></td>
 </tr>
 
-<tr id='pt2_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>testOpenCart</div></td>
+<tr id='ft2_1' class='none'>
+    <td class='failCase'><div class='testcase'>testOpenCart</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
-    <div id='div_pt2_1' class="collapse">  -->
+    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_1'>失败</button>
+    <div id='div_ft2_1' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
-    <div id='div_pt2_1' class="collapse in">
+    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_1'>失败</button>
+    <div id='div_ft2_1' class="collapse in">
     <pre>
     
-pt2_1: ===&gt;&gt;： ['005', '', '首页', '点击购物车', 'id', 'com.tude.android:id/btn_cart', '', 'click', '', '检查文本', '账号密码登录']
+ft2_1: ===&gt;&gt;： ['001', '', '首页', '点击允许', 'id', 'com.android.packageinstaller:id/permission_allow_button', '', 'click', '', '', '']
+正在查找元素：com.android.packageinstaller:id/permission_allow_button,查找方式：id
+Found Element： com.android.packageinstaller:id/permission_allow_button
+===&gt;&gt;： ['002', '', '首页', '点击允许', 'id', 'com.android.packageinstaller:id/permission_allow_button', '', 'click', '', '', '']
+正在查找元素：com.android.packageinstaller:id/permission_allow_button,查找方式：id
+Found Element： com.android.packageinstaller:id/permission_allow_button
+===&gt;&gt;： ['003', '', '首页', '点击允许', 'id', 'com.android.packageinstaller:id/permission_allow_button', '', 'click', '', '', '']
+正在查找元素：com.android.packageinstaller:id/permission_allow_button,查找方式：id
+Found Element： com.android.packageinstaller:id/permission_allow_button
+===&gt;&gt;： ['004', '', '首页', '点击允许', 'id', 'com.android.packageinstaller:id/permission_allow_button', '', 'click', '', '', '']
+正在查找元素：com.android.packageinstaller:id/permission_allow_button,查找方式：id
+Found Element： com.android.packageinstaller:id/permission_allow_button
+===&gt;&gt;： ['005', '', '首页', '点击购物车', 'id', 'com.tude.android:id/btn_cart', '', 'click', '', '检查文本', '账号密码登录']
 正在查找元素：com.tude.android:id/btn_cart,查找方式：id
-D:\workspace\python\mAppium\base\mAppiumAPI.py:35: UserWarning: com.tude.android:id/btn_cart is not found
-  warnings.warn("{} is not found".format(elementInfo))
-Element Not Found： com.tude.android:id/btn_cart
-AssertFail，断言方式：检查文本，预期数据：账号密码登录，实际：None
+Found Element： com.tude.android:id/btn_cart
+通过find_element_by_android_uiautomator，断言通过： 账号密码登录
+===&gt;&gt;： ['006', '', '首页', '点击:账号密码登录', 'id', 'com.tude.android:id/tv_account', '', 'click', '', '', '']
+正在查找元素：com.tude.android:id/tv_account,查找方式：id
+Found Element： com.tude.android:id/tv_account
+===&gt;&gt;： ['007', '', '首页', '输入账号', 'id', 'com.tude.android:id/et_account', '', 'sendkeys', 18521035133.0, '', '']
+正在查找元素：com.tude.android:id/et_account,查找方式：id
+Found Element： com.tude.android:id/et_account
+===&gt;&gt;： ['008', '', '首页', '输入密码', 'id', 'com.tude.android:id/et_password', '', 'sendkeys', 'qqqqqq', '', '']
+正在查找元素：com.tude.android:id/et_password,查找方式：id
+Found Element： com.tude.android:id/et_password
+===&gt;&gt;： ['009', '', '首页', '点击登录', 'id', 'com.tude.android:id/btn_login', '', 'click', '', '检查页面', '.base.HomeActivity']
+正在查找元素：com.tude.android:id/btn_login,查找方式：id
+Found Element： com.tude.android:id/btn_login
+current:.login.LoginActivity,expect:.base.HomeActivity
+AssertFail，断言方式：检查页面，预期数据：.base.HomeActivity，实际：.login.LoginActivity
 [失败详情]： []
+Traceback (most recent call last):
+  File "D:\workspace\python\mAppium\cases\shopping.py", line 48, in testOpenCart
+    self.assertTrue(result)
+AssertionError: False is not true
 
 
     </pre>
@@ -237,10 +265,10 @@ AssertFail，断言方式：检查文本，预期数据：账号密码登录，�
 <tr id='total_row' class="text-center active">
     <td>总计</td>
     <td>2</td>
-    <td>2</td>
+    <td>1</td>
+    <td>1</td>
     <td>0</td>
-    <td>0</td>
-    <td>通过率：100.00%</td>
+    <td>通过率：50.00%</td>
 </tr>
 </table>
 

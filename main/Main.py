@@ -8,36 +8,36 @@ from base.HTMLTestReportCN import HTMLTestRunner
 from cases.personal import Login
 from cases.shopping import OpenCart
 
-
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
 )
 
-# 多线程运行
+
+# 多进程运行
 def runMultiple(devices):
-    configs = []  # 完整的configs，多线程需要的配置
+    capsList = []
     for i in range(0, len(devices)):
         caps = {}
         caps["platformName"] = "android"
         caps["port"] = devices[i]["port"]
         caps["deviceName"] = devices[i]["deviceName"]
-        configs.append(caps)
-    pool = Pool(len(configs)) # thread pool
-    pool.map(runCases, configs)
-    pool.close()
-    pool.join()
+        capsList.append(caps)
+    pool = Pool(len(capsList))  # process pool
+    pool.map(runCases, capsList)
+    pool.close()  # 关闭pool，使其不在接受新的任务
+    pool.join()  # 主进程阻塞，等待子进程的退出， join方法要在close或terminate之后使用
 
 
-# 分线程执行用例
-def runCases(config):
+# 执行用例
+def runCases(caps):
     # {'deviceName': 'GWY0217826005102', 'platformName': 'android', 'port': '4723', 'appPackage': 'com.tude.android', 'appActivity': '.base.SplashActivity'}
     # 添加测试用例
     suite = unittest.TestSuite()
-    suite.addTest(MyTestCase.load_tests(Login, config))
-    suite.addTest(MyTestCase.load_tests(OpenCart, config))
+    suite.addTest(MyTestCase.load_tests(Login, caps))
+    suite.addTest(MyTestCase.load_tests(OpenCart, caps))
 
     # 生成报告
-    filePath = PATH('../report/{}.html'.format(config['deviceName']))
+    filePath = PATH('../report/{}.html'.format(caps['deviceName']))
     fp = open(filePath, 'wb')
     # 生成报告的Title,描述
     runner = HTMLTestRunner(
